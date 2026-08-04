@@ -1,0 +1,17 @@
+
+
+/* xs: Extra small - Menos de 575.98 and 576px - Celus grandes */
+@media (max-width: 575.98px) and (min-width: 576px) {}
+
+/* md: Medium - Desde 767.98px and 768px - Tablets vertical */
+@media (max-width: 767.98px) and (min-width: 768px) {}
+
+/* lg: Large - Desde 991.98px and 992px - Tablets horizontal / Notebooks chicas */
+@media (max-width: 991.98px) and (min-width: 992px) {}
+
+/* xl: Extra Large - Desde 1199.98px and 1200px - PC */
+@media (max-width: 1199.98px) and (min-width: 1200px) {}
+
+/* xxl: Extra Large - Desde 1399.98px and 1400px - PC grandes */
+@media (max-width: 1399.98px) and (min-width: 1400px) {}
+
