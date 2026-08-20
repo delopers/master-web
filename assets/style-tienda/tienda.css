@@ -11,7 +11,7 @@
     justify-content: center;
 }
 
-.hero h1 {
+.hero h1, .calzado {
     font-size: 5rem;
     font-weight: 900;
     letter-spacing: 3px;
@@ -24,15 +24,7 @@
     text-shadow: 2px 2px 10px rgba(220, 130, 40, 2.8);
 }
 
-.hero h3 {
-    font-size: 3rem;
-    font-weight: 700;
-    letter-spacing: 3px;
-    color: rgb(24, 99, 205);
-    text-shadow: 2px 2px 10px rgba(20, 30, 40, 2.8);
-}
-
-.hero :hover h3 {
+.hero :hover .calzado {
     color: rgb(9, 33, 126);
     text-shadow: 2px 2px 10px rgba(220, 130, 40, 2.8);
 }
