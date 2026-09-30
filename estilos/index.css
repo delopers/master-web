@@ -423,7 +423,7 @@ nav a {
 
 @media(max-width: 375px) {
     body {
-        background-color: lime;
+        background: #7a12db;
     }
 
     .sec-title {
