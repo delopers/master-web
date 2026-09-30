@@ -411,7 +411,7 @@ nav a {
 @media(max-width: 375px) {
     .sec-title {
         font-size: 48px;
-        margin: 0px 5px;
+        margin: 3px 7px;
     }
 
     .faq {
