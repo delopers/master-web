@@ -6,7 +6,7 @@
 }
 
 body {
-    background: #fefcf8;
+    background: #6b07c9;
     color: #1a1a1a
 }
 
@@ -28,9 +28,10 @@ header {
     align-items: center;
     position: sticky;
     top: 0;
-    background: rgba(202, 140, 18, 0.92);
+    background: #6b07c9;
     backdrop-filter: blur(12px);
-    z-index: 10
+    z-index: 10;
+    border-bottom: 1px solid rgb(28, 4, 106);
 }
 
 header b {
@@ -136,11 +137,22 @@ nav a {
     font-size: 56px;
     letter-spacing: -2px;
     line-height: 0.9;
-    margin-bottom: 30px
+    margin-bottom: 30px;
 }
 
 .sec-title span {
     color: #ff5a1f
+}
+
+.map-box {
+    margin-top: 20px
+}
+
+.faq {
+    background: #1a1a1a;
+    color: white;
+    border-radius: 24px;
+    padding: 30px
 }
 
 .cats {
@@ -225,7 +237,7 @@ nav a {
     background: #e9e9e9;
     border-radius: 24px;
     overflow: hidden;
-    position: relative
+    position: relative;
 }
 
 @media(max-width:900px) {
@@ -409,18 +421,25 @@ nav a {
 }
 
 @media(max-width: 375px) {
+    body {
+        background-color: lime;
+    }
+
     .sec-title {
-        font-size: 48px;
-        margin: 3px 7px;
+        font-size: 43px;
+        margin: 3px 10px;
+    }
+
+    .ubicacion {
+        padding: 14px 8%;
+        align-items: center; 
     }
 
     .faq {
-        display: grid;
-        grid-template-columns: 1.2fr 0.8fr;
-        padding: 5% 8%;
-        gap: 40px;
-        align-items: center;
-        padding: 30px;
+        margin-top: 20px;
     }
 
+    .WhatsApp {
+        display: none;
+    }
 }
