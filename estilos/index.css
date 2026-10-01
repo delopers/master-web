@@ -444,3 +444,15 @@ nav a {
         display: none;
     }
 }
+
+@media(max-width: 540px) {
+    body {
+        background: pink;
+    }
+}
+
+@media(max-width: 1092px) {
+    body {
+        background: brown;
+    }
+}
