@@ -22,7 +22,7 @@ document.querySelectorAll('.cat-btn').forEach(b => {
 // CARRUSEL AT
 let x = 0; setInterval(() => { x = (x + 1) % 3; document.getElementById('track').style.transform = `translateX(-${x * 360}px)` }, 3000);
 
-function enviarAT() {
+function enviar() {
     let e = document.getElementById('email').value;
     if (!e.includes('@')) { document.getElementById('msg').innerText = '⚠️ por favor ingresa un mail'; return }
     document.getElementById('msg').innerText = '💌 LISTO MAIL, 10% OFF ENVIADO - REVISÁ SPAM';
