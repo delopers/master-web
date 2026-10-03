@@ -411,19 +411,9 @@ nav a {
     }
 }
 
-@media(max-width:900px) {
-    .footer-grid {
-        grid-template-columns: 1fr
-    }
-
-    .logo-big {
-        font-size: 54px
-    }
-}
-
 @media(max-width: 540px) {
     body {
-        background: #7a43a3;
+        background: green;
     }
 
     .sec-title {
@@ -443,6 +433,16 @@ nav a {
 
     .WhatsApp {
         display: none;
+    }
+}
+
+@media(max-width:900px) {
+    .footer-grid {
+        grid-template-columns: 1fr
+    }
+
+    .logo-big {
+        font-size: 54px
     }
 }
 
