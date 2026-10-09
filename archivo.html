@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./1assets/estilo/archivo.css">
+
+    <title>Archivo - Agustin Morel Servicio Técnico Domec Oficial</title>
+</head>
+
+<body>
+    <div class="app">
+        <aside>
+            <div class="brand">🗄️<br>AGUSTIN<br><span>MOREL</span><b>ARCHIVO DOMEC</b></div>
+            <button class="tab active" data-tab="clientes">👥 Clientes</button>
+            <button class="tab" data-tab="trabajos">🔧 Trabajos</button>
+            <button class="tab" data-tab="stock">📦 Repuestos</button>
+            <a href="index.html" class="back">← Volver al sitio</a>
+        </aside>
+        <main>
+            <div id="clientes" class="panel active">
+                <div class="top">
+                    <h1>Clientes / Pedidos WhatsApp</h1><button id="addCliente">+ Nuevo</button>
+                </div>
+                <div class="search"><input id="searchC" placeholder="Buscar por nombre, tel, equipo..."></div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Cliente</th>
+                            <th>Tel</th>
+                            <th>Equipo</th>
+                            <th>Falla</th>
+                            <th>Estado</th>
+                            <th>Fecha</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodyC"></tbody>
+                </table>
+            </div>
+            <div id="trabajos" class="panel">
+                <div class="top">
+                    <h1>Trabajos Realizados</h1><button id="addTrab">+ Trabajo</button>
+                </div>
+                <div class="grid" id="gridT"></div>
+            </div>
+            <div id="stock" class="panel">
+                <div class="top">
+                    <h1>Stock Repuestos Domec Original</h1>
+                </div>
+                <div class="stock-grid" id="stockG"></div>
+            </div>
+        </main>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-box">
+            <h3 id="modalTitle"></h3>
+            <div id="modalBody"></div>
+            <div class="modal-btns"><button id="cancel">Cancelar</button><button id="save">Guardar 🗄️</button></div>
+        </div>
+    </div>
+
+    <script src="./1assets/modo/archivo.js"></script>
+
+</body>
+
+</html>
