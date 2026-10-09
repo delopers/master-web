@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f5f6f8;
+    display: flex;
+    min-height: 100vh;
+}
+
+.app {
+    display: flex;
+    width: 100%
+}
+
+aside {
+    width: 240px;
+    background: #0f0f0f;
+    color: #fff;
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.brand {
+    font-weight: 900;
+    font-size: 20px;
+    line-height: .9;
+    margin-bottom: 20px
+}
+
+.brand span {
+    color: #E30613
+}
+
+.brand b {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    color: #777;
+    margin-top: 4px
+}
+
+.tab {
+    background: transparent;
+    border: 1px solid #222;
+    color: #aaa;
+    padding: 12px;
+    border-radius: 12px;
+    text-align: left;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s
+}
+
+.tab.active {
+    background: #fff;
+    color: #000;
+    border-color: #fff
+}
+
+.back {
+    margin-top: auto;
+    color: #666;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700
+}
+
+main {
+    flex: 1;
+    padding: 28px
+}
+
+.panel {
+    display: none
+}
+
+.panel.active {
+    display: block
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px
+}
+
+.top h1 {
+    font-size: 26px;
+    font-weight: 900;
+    letter-spacing: -.5px
+}
+
+.top button {
+    background: #111;
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 999px;
+    font-weight: 800;
+    cursor: pointer
+}
+
+.search input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    background: #fff;
+    margin-bottom: 14px
+}
+
+table {
+    width: 100%;
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    border-collapse: collapse;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, .06)
+}
+
+th {
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #888;
+    text-align: left;
+    padding: 14px 12px;
+    background: #fafafa
+}
+
+td {
+    padding: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    border-top: 1px solid #f0f0f0
+}
+
+.badge {
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 800
+}
+
+.b-pend {
+    background: #FFF3CD;
+    color: #856404
+}
+
+.b-prog {
+    background: #CCE5FF;
+    color: #004085
+}
+
+.b-ok {
+    background: #D4EDDA;
+    color: #155724
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 14px
+}
+
+.card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, .06)
+}
+
+.stock-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 14px
+}
+
+.stock {
+    background: #fff;
+    border-radius: 16px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, .06)
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .6);
+    backdrop-filter: blur(8px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100
+}
+
+.modal.open {
+    display: flex
+}
+
+.modal-box {
+    background: #fff;
+    border-radius: 20px;
+    padding: 24px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, .3)
+}
+
+.modal-box h3 {
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 14px
+}
+
+.modal-box input,
+.modal-box select,
+.modal-box textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-family: inherit
+}
+
+.modal-btns {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 10px
+}
+
+#cancel {
+    background: #f0f0f0;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 999px;
+    font-weight: 700
+}
+
+#save {
+    background: #25D366;
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 999px;
+    font-weight: 800
+}

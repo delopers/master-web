@@ -1,0 +1,42 @@
+.repuestos {
+    margin-top: 40px;
+    background: rgb(244, 245, 242);
+    border: 1px solid rgb(208, 215, 215);
+    border-radius: 20px 20px 0px 0px;
+    padding: 28px
+}
+
+.repuestos h2 {
+    font-size: 36px;
+    font-weight: 900;
+    letter-spacing: -1px;
+    margin-bottom: 28px;
+    text-align: center;
+    text-decoration: underline 3px solid orange;
+    color: #111;
+}
+
+.lista-repuestos {
+    list-style: none;
+    display: grid;
+    gap: 10px
+}
+
+.lista-repuestos li a {
+    display: flex;
+    align-items: center;
+    background: #161616;
+    border: 1px solid #222;
+    padding: 14px 18px;
+    border-radius: 12px;
+    color: #ccc;
+    text-decoration: none;
+    transition: .2s
+}
+
+.lista-repuestos li a:hover {
+    background: #1e1e1e;
+    color: #fff;
+    border-color: #a855f7;
+    transform: translateX(6px)
+}
