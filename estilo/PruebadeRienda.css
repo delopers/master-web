@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    background: #000;
+    color: #fff
+}
+
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 20, 0, 0.6), rgba(0, 0, 0, 0.7)),
+        url('../camera/caballo.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 30px 20px;
+    background-size: 1200px 750px; 
+}
+
+.card-riendas {
+    background: rgba(12, 51, 29, 0.88);
+    border: 1px solid #d4b86a;
+    border-radius: 12px;
+    backdrop-filter: blur(6px);
+    max-width: 340px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .5);
+}
+
+.card-riendas .price {
+    background: #e8c97a;
+    color: #000;
+    font-weight: 900;
+    border-radius: 6px;
+    padding: 6px;
+    font-size: 18px
+}
+
+.text-gold {
+    color: #e8c97a
+}
+
+.btn-gold {
+    background: #e8c97a;
+    color: #000;
+    font-weight: 800
+}
+
+.btn-gold:hover {
+    background: #fff
+}
+
+.title {
+    font-weight: 800;
+    line-height: 1.1;
+    font-size: 32px;
+    max-width: 280px;
+    text-shadow: 0 2px 10px #000
+}
