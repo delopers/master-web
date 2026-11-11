@@ -48,7 +48,7 @@ function atender(){
   document.getElementById('callStatus').textContent = 'Atendiendo automáticamente...';
   document.getElementById('btnAtender').style.display='none';
   document.getElementById('btnCortar').style.display='block';
-  hablar('!Selecciona una opción para comenzar un chat¡');
+  hablar('Selecciona una opción para comenzar un chat');
 }
 
 function cortar(){
