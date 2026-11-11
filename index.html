@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="./contestador/assets/estilos/style.css" rel="stylesheet">
+
+  <title>Bajo Cero Refrigeración - Contestador Automático</title>
+
+</head>
+
+<body>
+
+  <div class="phone">
+    <div class="top"><span>📶 Móvil</span><span id="clock">--:--</span><span>🔋 87%</span></div>
+
+    <div class="header">
+      <!--div class="logo">❄️</div-->
+      <h1>Bajo Cero REFRIGERACIÓN ❄️</h1>
+      <p>Contestador Automático 24hs</p>
+      <span class="badge">● EN LÍNEA - ATIENDE SOLO</span>
+    </div>
+
+    <div class="avatar">
+      <a href="./contestador/assets/camara/WhatsApp Image 3.jpeg">
+        <img src="./contestador/assets/camara/WhatsApp Image 3.jpeg" alt="Chatear">
+      </a>
+    </div>
+
+    <div class="llamada">
+      <div class="caller" id="callerName">Llamada entrante...</div>
+      <div class="status" id="callStatus">Sonando... El sistema atenderá solo en 3 seg</div>
+    </div>
+
+    <div class="transcript" id="transcript"> ... </div>
+
+    <div class="options" id="options">
+      <button class="opt" onclick="elegir('reparacion')">🔧 Reparación<br><small>No enfría / No arranca</small></button>
+      <button class="opt" onclick="elegir('instalacion')">❄️ Instalación<br><small>Split nuevo</small></button>
+      <button class="opt" onclick="elegir('mantenimiento')">🧹 Mantenimiento<br>
+        <small>Limpieza + Service</small></button>
+      <button class="opt" onclick="elegir('presupuesto')">💰 Presupuesto<br><small>¿Cuánto sale?</small></button>
+    </div>
+
+    <button class="mic" onclick="escuchar()">🎤 Hablar por voz - Decí "no enfría" o "instalar"</button>
+
+    <div class="form" id="formDatos">
+      <input id="nombre" placeholder="Tu nombre">
+      <input id="barrio" placeholder="Barrio / Localidad - Ej: Longchamps">
+      <input id="telefono" placeholder="telefono alternativo">
+      <select id="equipo">
+        <option>Split 3000 frigorías</option>
+        <option>Split 4500 frigorías</option>
+        <option>Split 6000 frigorías</option>
+        <option>Heladera / Freezer</option>
+        <option>Aire Ventana</option>
+        <option>Cámara frigorífica</option>
+      </select>
+      <button onclick="guardarPedido()">✅ Confirmar pedido y que me llamen</button>
+    </div>
+
+    <button class="call" id="btnAtender" onclick="atender()">📞 Llamada Entrante</button>
+    <button class="hang" id="btnCortar" onclick="cortar()">📵 Cortar llamada</button>
+
+    <div class="pedidos" id="listaPedidos"></div>
+    <div class="footer">
+      <p>Diseños RGBY-WEB • Alejandro Korn, Buenos Aires • </p>
+      <a href="https://wa.me/541136277226?text=Hola%20Prefiero%2C%20hablar%20con%20un%20Humano">
+        <p>WhatsApp:011-3627-7226 • </p>
+      </a>
+      <a href="https://delopers.github.io/master-web/">
+        <p>Nuestra Asistente Virtual • </p>
+      </a>
+    </div>
+  </div>
+
+  <script src="./contestador/assets/modos/script.js"></script>
+
+</body>
+
+</html>
